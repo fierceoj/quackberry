@@ -1,7 +1,7 @@
 REM ======================================
 REM Author: fierceoj
 REM Description: Basic Bash reverse shell
-REM Target: Raspberry Pi OS w/ Desktop
+REM Target: Raspberry Pi OS 
 REM Usage: Change IP and port
 REM Usage: Catch the shell with a listener
 REM ======================================
