@@ -1,4 +1,5 @@
 # quackberry
 
-USB Rubber Ducky scripts targeting Raspberry Pi. 
+USB Rubber Ducky scripts targeting Raspberry Pi OS. 
+
 
